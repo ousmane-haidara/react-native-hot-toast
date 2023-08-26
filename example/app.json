@@ -1,10 +1,10 @@
 {
-  "name": "react-native-toast-example",
+  "name": "react-native-hot-toast-example",
   "displayName": "Toast Example",
   "expo": {
-    "name": "react-native-toast-example",
-    "slug": "react-native-toast-example",
-    "description": "Example app for react-native-toast",
+    "name": "react-native-hot-toast-example",
+    "slug": "react-native-hot-toast-example",
+    "description": "Example app for react-native-hot-toast",
     "privacy": "public",
     "version": "1.0.0",
     "platforms": [

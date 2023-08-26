@@ -1,7 +1,7 @@
-# React Native Toast
-[![runs with expo](https://img.shields.io/badge/Runs%20with%20Expo-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/) [![GitHub license](https://img.shields.io/github/license/backpackapp-io/react-native-toast)](https://github.com/backpackapp-io/react-native-toast/blob/master/LICENSE) [![npm](https://img.shields.io/badge/types-included-blue?style=flat-square)](https://www.npmjs.com/package/@backpackapp-io/react-native-toast)
+# React Native Hot Toast
 
 A toast library for react-native, built on [react-hot-toast](https://react-hot-toast.com/docs). It supports features such as multiple toasts, keyboard handling, swipe to dismiss, positional toasts, and JS promises. It runs on iOS, android, and web.
+this is the fork of [React Native Toast](https://github.com/backpackapp-io/react-native-hot-toast) to support dependencies
 
 <br />
 
@@ -18,7 +18,7 @@ I know what you might be thinking (*jeez, another toast library?*). Trust me her
 - **Swipe to dismiss**
 - **Positional toasts** (top & bottom)
 - **Customizable** (custom styles, dimensions, duration, and even create your own component to be used in the toast)
-- Add support for **promises** <-- Really! Call `toast.promise(my_promise)` and watch react-native-toast work its magic, automatically updating the toast with a custom message on success -- or an error message on reject.
+- Add support for **promises** <-- Really! Call `toast.promise(my_promise)` and watch react-native-hot-toast work its magic, automatically updating the toast with a custom message on success -- or an error message on reject.
 - Runs on **web**
 - Support for native modals
 - Callbacks for onPress, onShow, and onHide
@@ -26,11 +26,7 @@ I know what you might be thinking (*jeez, another toast library?*). Trust me her
 # Getting Started
 
 ## Installation
-```sh
-yarn add @backpackapp-io/react-native-toast
-# or
-npm i @backpackapp-io/react-native-toast
-```
+Check in npm
 #### Peer Dependencies
 Install and link [react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/installation/), [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context), and [react-native-gesture-handler](https://docs.swmansion.com/react-native-gesture-handler/docs/installation)
 
@@ -51,7 +47,7 @@ Add the ``<Toasts />`` component into the root of your app. Whenever you are rea
 
 ```js
 import { StyleSheet, Text } from 'react-native';
-import { toast, Toasts } from '@backpackapp-io/react-native-toast';
+import { toast, Toasts } from '@oushdr/react-native-hot-toast';
 import { useEffect } from 'react';
 
 export default function App() {
@@ -469,14 +465,13 @@ toast.success('Copied to clipboard!', {
 
 ### Thank you [react-hot-toast](https://react-hot-toast.com)
 
-react-native-toast is built with modified react-hot-toast internals? Why? Well, react-native doesn't really need all the unnecessary web fluff (aria what?). So, I trimmed it down and made it *perfect* for mobile development by battle testing it on mobile devices and creating react-native components built specifically for iOS and Android development.
+react-native-hot-toast is built with modified react-hot-toast internals? Why? Well, react-native doesn't really need all the unnecessary web fluff (aria what?). So, I trimmed it down and made it *perfect* for mobile development by battle testing it on mobile devices and creating react-native components built specifically for iOS and Android development.
 
 <br />
 
 # Author
-**[Nick DeBaise on LinkedIn](https://www.linkedin.com/in/nick-debaise/)**
+**[Ousmane HAIDARA on LinkedIn](https://www.linkedin.com/in/ousmane-haidara-ousdev/)**
 
-*Email me directly*: nickdebaise@gmail.com
 
 <br />
 
@@ -488,9 +483,3 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
 
-### Todos
-
-- Add support for multiline toasts
-- Add unit tests for Components and hooks
-- Allow theming in `<Toasts />`
-- Queue manager
